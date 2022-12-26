@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e665ce21-4450-4a19-b408-37cc727ee6fc
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Group 19_0.png'
+  uri:
+    -
+      value: 'public://logos/company/Group 19_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 2074
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1671944315

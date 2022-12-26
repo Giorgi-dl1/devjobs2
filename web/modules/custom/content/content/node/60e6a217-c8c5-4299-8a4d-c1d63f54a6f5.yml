@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 60e6a217-c8c5-4299-8a4d-c1d63f54a6f5
+  bundle: job
+  default_langcode: en
+  depends:
+    e665ce21-4450-4a19-b408-37cc727ee6fc: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Senior Software Engineer'
+  created:
+    -
+      value: 1671944165
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_company_logo:
+    -
+      entity: e665ce21-4450-4a19-b408-37cc727ee6fc
+      alt: 'company logo'
+      title: ''
+      width: 140
+      height: 140
+  field_company_name:
+    -
+      value: Scoot
+      format: basic_html
+  field_company_website:
+    -
+      uri: 'http://example.dev.com'
+      title: ''
+      options: {  }
+  field_description:
+    -
+      value: '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>'
+      format: basic_html
+  field_full_time:
+    -
+      value: true
+  field_location:
+    -
+      value: 'United Kingdom'
+      format: basic_html
+  field_requirements:
+    -
+      value: '<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p><ul><li>Morbi interdum mollis sapien. Sed</li><li>Phasellus lacinia magna a ullamcorper laoreet, lectus arcu pulvinar risus</li><li>Phasellus lacinia magna a ullamcorper laoreet, lectus arcu pulvinar risus Phasellus lacinia magna a&nbsp;</li><li>Phasellus lacinia magna a ullamcorper laoreet, lectus&nbsp;</li></ul>'
+      format: basic_html
+  field_todos:
+    -
+      value: '<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p><ol><li>Phasellus lacinia magna a ullamcorper laoreet, lectus arcu pulvinar risus Phasellus lacinia magna a&nbsp;</li><li>Phasellus lacinia magna a ullamcorper laoreet, lectus arcu pulvinar risus&nbsp;</li><li>Phasellus lacinia magna a ullamcorper laoreet, lectus arcu pulvinar risus Phasellus lacinia&nbsp;</li><li>Phasellus lacinia magna a ullamcorper laoreet, lectus arcu pulvinar risus Phasellus lacinia magna</li></ol><p>&nbsp;</p>'
+      format: basic_html

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b81b80ec-ac84-4924-94ef-4311a3f271cd
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Group 3 Copy 3_0_0.png'
+  uri:
+    -
+      value: 'public://logos/company/Group 3 Copy 3_0_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 905
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1672051705

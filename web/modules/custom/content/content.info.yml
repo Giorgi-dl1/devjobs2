@@ -1,0 +1,5 @@
+name: 'content'
+type: module
+core_version_requirement: ^9
+description: 'Default content desc.'
+package: 'custom'
