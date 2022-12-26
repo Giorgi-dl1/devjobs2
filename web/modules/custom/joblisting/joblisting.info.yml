@@ -1,0 +1,5 @@
+name: 'joblisting'
+type: module
+core_version_requirement: ^9
+description: 'Module fetching data from DB and renders content on frontpage'
+package: 'custom'

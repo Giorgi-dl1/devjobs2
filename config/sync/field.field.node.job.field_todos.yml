@@ -1,0 +1,21 @@
+uuid: 06c6a25a-48b6-434c-a4a4-c6f335804db7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_todos
+    - node.type.job
+  module:
+    - text
+id: node.job.field_todos
+field_name: field_todos
+entity_type: node
+bundle: job
+label: Todos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

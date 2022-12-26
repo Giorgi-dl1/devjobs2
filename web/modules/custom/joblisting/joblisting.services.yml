@@ -1,0 +1,7 @@
+services:
+  joblisting.query:
+    class: Drupal\joblisting\Service\EntityQueryService
+    arguments: ['@entity_type.manager']
+  joblisting.utils:
+    class: Drupal\joblisting\Service\Utils
+

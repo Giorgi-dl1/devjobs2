@@ -1,0 +1,69 @@
+
+<div class='relative'>
+    <form action="/" method='POST' class='flex bg-white dark:bg-[#19202D] transition duration-300 ease-in rounded-md '>
+        <div class='flex flex-1 items-center gap-4 p-4 md:border-r-[1px] border-[#6e80984f]'>
+          <img src="/{{ directory }}/images/search.png" alt="search icon" class='hidden md:block !mb-0'>
+          <input class='border-none outline-none bg-transparent dark:text-white w-full' type="text" name='title' placeholder='Filter by title, companies, expertise...'>
+        </div>
+        {# desktop filter #}
+        <div class='hidden md:flex flex-1 items-center gap-4 p-4 border-r-[1px] border-[#6e80984f] '>
+            <img src="/{{ directory }}/images/location.png" alt="search icon">
+            <input class='border-none outline-none bg-transparent dark:text-white w-full' type="text" name='locationS' placeholder='Filter by location...'>
+        </div>
+        <div class='hidden md:flex flex-1 justify-between items-center gap-6 p-4'>
+            <div class='flex items-center gap-3'>
+                    <input type="checkbox" id="fullTime" name="fullTime" value="true" class='cursor-pointer w-6 h-6'>
+                    <label for="fullTime" class='dark:text-white text-sm'>Full Time Only</label><br>
+            </div>
+            <button type='submit' class='px-[1.8rem] py-[1rem] bg-[#5964E0] font-bold text-white align-center rounded-md hover:bg-[#939BF4] transition duration-500 ease-in'>Search</button>
+        </div>
+        {# mobile icons #}
+        <div class='flex justify-between items-center gap-4 px-4 md:hidden'>
+            <img id='toggleBtn' src="{{ directory }}/images/filter.png" alt="filter" class='cursor-pointer dark:brightness-0 dark:invert'>
+            <button type='submit' class='p-[14px] m-4 mx-0 bg-[#5964E0] font-bold text-white align-center rounded-md hover:bg-[#939BF4] transition duration-500 ease-in'>
+                <img src="/{{ directory }}/images/search.png" alt="search icon" class='brightness-0 invert'>
+            </button>
+        </div>
+        {# toggle filter #}
+        <div id='toggleCont' class='absolute hidden bg-white dark:bg-[#19202D] top-[30vh] left-0 right-0 flex-col z-50 rounded-md md:hidden'>
+            <div class='flex flex-1 items-center gap-4 p-6 border-b-[1px] border-[#6e80984f]'>
+                <img src="/{{ directory }}/images/location.png" alt="search icon">
+                <input class='border-none outline-none bg-transparent dark:text-white w-full' type="text" name='location' placeholder='Filter by location...'>
+            </div>
+            <div class='flex flex-col flex-1 gap-6 p-6'>
+                <div class='flex items-center gap-3'>
+                    <input type="checkbox" id="fullTime" name="fullTime" value="true" class='cursor-pointer w-6 h-6'>
+                    <label for="fullTime" class='dark:text-white'>Full Time Only</label><br>
+                </div>
+                <button type='submit' class='w-full px-[1.8rem] py-[1rem] bg-[#5964E0] font-bold text-white align-center rounded-md hover:bg-[#939BF4] transition duration-500 ease-in'>Search</button>
+            </div>
+        </div>
+
+    </form>
+    {% if jobs|length > 0 %}
+        <div class='mt-[80px] md:mt-[110px] grid justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[65px]'>
+            {% for job in jobs %}
+                <div class='w-[350px] rounded-md p-[2rem] max-w-full relative bg-white dark:bg-[#19202D] transition duration-300 ease'>
+                    <img src="{{ job.company_logo }}" class='absolute object-cover rounded-md left-[2rem] top-[-25px] w-[50px] h-[50px]' />
+                    <div class="my-[1rem] text-[#6E8098]">
+                        <span>{{ job.created_at}} ago . </span>
+                        <span>{{ job.full_time ? 'Full Time' : 'Part Time' }}</span>
+                    </div>
+                    <a href="{{ job.node_url }}" class='text-xl font-bold dark:text-white hover:opacity-60 transition duration-300'>{{ job.title}}</a>
+                    <div class="my-[1rem] text-[#6E8098]">{{ job.company}}</div>
+                    <div class='font-bold text-[#5964E0]'>{{ job.location}}</div>
+                </div>
+            {% endfor %}
+        </div>
+        {% if jobs|length >= 6 %}
+            <button class='px-[1.8rem] py-[1rem] bg-[#5964E0] font-bold text-white align-center mt-[3rem] rounded-md hover:bg-[#939BF4] transition duration-500 ease-in'>Load More</button>
+        {% endif %}
+    {% else %}
+        <div class='text-[20px] md:text-3xl font-bold dark:text-white min-h-[40vh] flex justify-center items-center'>
+            No vacancies found
+        </div>
+    {% endif %}
+</div>
+
+  <div id='toggleBg' class="absolute top-[-118px] hidden left-[-24px] right-[-24px] bottom-[-205px] bg-[#00000052] z-30 md:hidden"></div>
+

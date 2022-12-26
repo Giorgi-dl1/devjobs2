@@ -1,0 +1,8 @@
+joblisting.jobcontroller:
+  path: '/jobs'
+  defaults:
+    _controller: '\Drupal\joblisting\Controller\JobController::content'
+    _title: 'Job Listing'
+  requirements:
+    _permission: 'access content'
+    

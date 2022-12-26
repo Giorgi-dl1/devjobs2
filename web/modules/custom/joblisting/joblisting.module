@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+
+ function joblisting_theme($existing, $type, $theme, $path){
+    return [
+        'job-listing' => [
+          'variables' => ['jobs' => NULL],
+        ],
+      ];
+ }

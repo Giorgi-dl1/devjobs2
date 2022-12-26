@@ -1,0 +1,19 @@
+{% extends "block.html.twig" %}
+{% block content %}
+  <div class='bg-[#5964E0] relative h-[136px] flex justify-between md:rounded-bl-[6rem] px-[24px] md:px-[50px] lg:px-[165px] items-center overflow-hidden '>
+    <a href='/' class='z-20'>
+      <img src="/{{ directory }}/images/logo.png" alt="">
+    </a>
+    <div class='flex justify-between items-center gap-[1rem]'>
+        <img src="/{{ directory }}/images/sun_s.png" alt="sun icon">
+          <div class="relative inline-block w-[48px] align-middle select-none transition group z-10">
+              <input type="checkbox"  id='toggler' name="toggle" class="checked:right-[4px] group-hover:bg-[#939BF4] group-hover:border-[#939BF4] ml-[4px] toggle-checkbox absolute translate-y-[4px] block w-[16px] h-[16px] rounded-full bg-[#5964E0] border-[#5964E0] appearance-none cursor-pointer"/>
+              <label for="toggler" class="toggle-label block mb-[0] overflow-hidden h-6 rounded-full bg-white cursor-pointer"></label>
+          </div>
+        <img src="/{{ directory }}/images/moon.png" alt="moon icon">
+    </div>
+    <img src="/{{ directory }}/images/triangle.png" class='absolute rotate-[30deg] left-[-80px] bottom-[-90px]'>
+    <img src="/{{ directory }}/images/triangle.png" class='absolute rotate-[5deg] left-[240px] top-[-7px]'>
+    <img src="/{{ directory }}/images/triangle.png" class='absolute right-[0] rotate-[60deg] bottom-[-214px] w-[533px] h-[335px] hidden lg:block'>
+  </div>
+{% endblock %}

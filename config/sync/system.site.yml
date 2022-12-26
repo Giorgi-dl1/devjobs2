@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 3bd7b9a5-0eb9-49e7-9a63-2954a291045a
+name: 'job listing'
+mail: drgls@mail.ru
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /jobs
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
