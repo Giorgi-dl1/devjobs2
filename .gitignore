@@ -8,7 +8,6 @@
 /web/libraries/
 
 # Ignore sensitive information
-/web/sites/*/settings.php
 /web/sites/*/settings.local.php
 
 # Ignore Drupal's file directory
@@ -21,4 +20,17 @@
 /.idea/
 /.vscode/
 
-mariadb_volume
+
+/web/themes/custom/ineratec/*.log
+#/mix-manifest.json
+/web/themes/custom/ineratec/node_modules
+
+# Ignore compiled assets.
+/web/themes/custom/ineratec/dist
+
+# Ignore lock files.
+/web/themes/custom/ineratec/package-lock.json
+#/yarn.lock
+
+# Ignore database
+/mariadb_volume
